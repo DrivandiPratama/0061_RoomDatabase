@@ -5,4 +5,6 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "tblSiswa")
 class Siswa {
+    @PrimaryKey(autoGenerate = true)
+
 }
