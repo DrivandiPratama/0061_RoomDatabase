@@ -88,5 +88,13 @@ fun EntrySiswaBody(
         modifier = modifier.padding(
             dimensionResource(id = R.dimen.padding_medium)
         )
-    )
+    ) {
+        FormInputSiswa(
+            detailSiswa = uiStateSiswa.detailSiswa,
+            onValueChange = onSiswaValueChange,
+            modifier = Modifier.fillMaxWidth()
+        )
+
+
+    }
 }
