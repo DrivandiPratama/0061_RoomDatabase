@@ -8,4 +8,11 @@ import com.example.myapplication.repositori.RepositoriSiswa
 import com.example.myapplication.room.Siswa
 
 class EntryViewModel(private val repositoriSiswa: RepositoriSiswa) : ViewModel() {
+
+    /**
+     * Berisi status Siswa saat ini
+     */
+    var uiStateSiswa by mutableStateOf(UIStateSiswa())
+        private set
 }
+
