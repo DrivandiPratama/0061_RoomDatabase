@@ -14,5 +14,15 @@ abstract class SiswaDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE : SiswaDatabase? = null
 
-
+        fun getDatabase(context: Context) : SiswaDatabase {
+            return INSTANCE ?: synchronized(this) {
+                Room.databaseBuilder(
+                    context,
+                    DatabaseSiswa::class.java,
+                    "siswa_database"
+                )
+                    .build().also { INSTANCE = it }
+            }
+        }
+    }
 }
