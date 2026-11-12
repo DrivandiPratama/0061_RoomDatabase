@@ -12,5 +12,7 @@ abstract class SiswaDatabase : RoomDatabase() {
 
     companion object{
         @Volatile
-   
+        private var INSTANCE : SiswaDatabase? = null
+
+
 }
