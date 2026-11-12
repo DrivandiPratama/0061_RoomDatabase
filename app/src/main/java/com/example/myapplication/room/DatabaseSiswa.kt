@@ -8,5 +8,7 @@ import androidx.room.Room
 
 abstract class SiswaDatabase : RoomDatabase() {
 
+    abstract fun siswaDao() : SiswaDao
+
 
 }
