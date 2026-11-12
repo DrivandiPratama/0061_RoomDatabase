@@ -11,4 +11,6 @@ abstract class SiswaDatabase : RoomDatabase() {
     abstract fun siswaDao() : SiswaDao
 
     companion object{
+        @Volatile
+   
 }
