@@ -28,4 +28,7 @@ class HomeViewModel(
                 initialValue = HomeUiState()
             )
 
+    data class HomeUiState(
+        val listSiswa: List<Siswa> = listOf()
+    )
 }
