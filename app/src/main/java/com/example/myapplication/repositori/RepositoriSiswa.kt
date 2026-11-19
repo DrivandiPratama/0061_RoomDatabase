@@ -1,4 +1,3 @@
-
 package com.example.myapplication.repositori
 
 import com.example.myapplication.room.Siswa
