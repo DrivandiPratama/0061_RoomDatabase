@@ -25,3 +25,5 @@
 <img width="265" height="572" alt="image" src="https://github.com/user-attachments/assets/f7c1e0fb-21a9-4eab-a7a6-80ec1c9283be" />
 
 ## HOME PAGE AFTER EDIT SISWA
+
+<img width="266" height="572" alt="image" src="https://github.com/user-attachments/assets/55c1980a-af0b-4347-b35f-aad27dc0c562" />
