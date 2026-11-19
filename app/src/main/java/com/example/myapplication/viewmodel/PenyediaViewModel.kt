@@ -6,6 +6,10 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.myapplication.repositori.AplikasiSiswa
+import com.example.myapplication.viewmodel.HomeViewModel
+import com.example.myapplication.viewmodel.EntryViewModel
+import com.example.myapplication.viewmodel.DetailViewModel
+import com.example.myapplication.viewmodel.EditViewModel
 
 object PenyediaViewModel {
 
@@ -18,18 +22,22 @@ object PenyediaViewModel {
         initializer {
             EntryViewModel(aplikasiSiswa().container.repositoriSiswa)
         }
-        //edit : tamnbah initializer untuk DetailViewModel dan editviewmodel
+
         initializer {
-            DetailViewModel(this.createSavedStateHandle(),
-                aplikasiSiswa().container.repositoriSiswa)
+            DetailViewModel(
+                this.createSavedStateHandle(),
+                aplikasiSiswa().container.repositoriSiswa
+            )
         }
+
         initializer {
-            EditViewModel(this.createSavedStateHandle(),
-                aplikasiSiswa().container.repositoriSiswa)
+            EditViewModel(
+                this.createSavedStateHandle(),
+                aplikasiSiswa().container.repositoriSiswa
+            )
         }
     }
 }
-
 /**
  * Fungsi ekstensi query untuk objek Application dan mengembalikan sebuah instance dari
  * AplikasiSiswa.
