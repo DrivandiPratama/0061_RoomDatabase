@@ -1,4 +1,3 @@
-
 package com.example.myapplication.repositori
 
 import android.content.Context
@@ -10,7 +9,8 @@ interface ContainerApp {
 
 class DefaultContainerApp(private val context: Context) : ContainerApp {
     override val repositoriSiswa: RepositoriSiswa by lazy {
-        OfflineRepositoriSiswa(DatabaseSiswa.getDatabase(context).siswaDao()
+        OfflineRepositoriSiswa(
+            DatabaseSiswa.getDatabase(context).siswaDao()
         )
     }
 }
